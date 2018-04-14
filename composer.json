@@ -14,10 +14,9 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": { "Larowlan\\RomanNumeralGenerator\\": "src/" }
+        "psr-4": { "Larowlan\\RomanNumeral\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Larowlan\\RomanNumeralGeneratorTest\\": "tests/" }
+        "psr-4": { "Larowlan\\RomanNumeral\\Tests\\": "tests/" }
     }
-
 }
