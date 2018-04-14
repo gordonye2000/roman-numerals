@@ -19,7 +19,6 @@ class RomanNumeralGenerator {
    *   Roman numeral representing the passed integer.
    */
   public function generate(int $number, bool $lowerCase = FALSE) : string {
-    //if(!$lowerCase) {
     	$n = intval($number); 
     	$res = ''; 
     	$romanNumber_array = array( 
@@ -40,14 +39,14 @@ class RomanNumeralGenerator {
         	$matches = intval($n / $number); 
         	$res .= str_repeat($roman, $matches); 
         	$n = $n % $number; 
-    	}
-    if(!$lowerCase) {
-	return $res;
-    } 
-    else {
-	return strtolower($res);	
-    }
-    //return $res; 
+        }
+        
+        if(!$lowerCase) {
+	    return $res;
+        } 
+        else {
+	    return strtolower($res);	
+        }
   }
 
 }
